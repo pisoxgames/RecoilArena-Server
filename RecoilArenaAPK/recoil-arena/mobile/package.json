@@ -1,0 +1,13 @@
+{
+  "name": "recoil-arena-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "APK de RECOIL ARENA 3D (Capacitor)",
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
