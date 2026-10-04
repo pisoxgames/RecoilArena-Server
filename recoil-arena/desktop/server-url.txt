@@ -1,0 +1,3 @@
+# Pon aquí la URL de tu servidor online (una sola línea), por ejemplo:
+# https://recoil-arena.onrender.com
+# Si la dejas vacía, el juego usa un servidor local integrado (solo jugarás en tu red local).
