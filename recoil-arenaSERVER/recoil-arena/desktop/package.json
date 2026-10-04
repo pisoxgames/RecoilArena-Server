@@ -1,0 +1,58 @@
+{
+  "name": "recoil-arena-3d",
+  "productName": "Recoil Arena 3D",
+  "version": "1.0.0",
+  "description": "Cliente de escritorio de RECOIL ARENA 3D",
+  "main": "main.js",
+  "author": "Iker",
+  "license": "MIT",
+  "scripts": {
+    "prepare-app": "node prepare.js",
+    "start": "node prepare.js && electron .",
+    "dist": "node prepare.js && electron-builder --win portable nsis --x64"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5",
+    "three": "0.160.0"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.iker.recoilarena",
+    "productName": "Recoil Arena 3D",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "app/**/*",
+      "package.json"
+    ],
+    "asar": true,
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": true,
+      "artifactName": "RecoilArena3D-Setup-${version}.exe"
+    },
+    "portable": {
+      "artifactName": "RecoilArena3D-Portable-${version}.exe"
+    },
+    "electronLanguages": [
+      "es",
+      "en-US",
+      "fr"
+    ],
+    "compression": "maximum"
+  }
+}

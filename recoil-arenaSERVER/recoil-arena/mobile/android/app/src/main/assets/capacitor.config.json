@@ -1,0 +1,15 @@
+{
+	"appId": "com.iker.recoilarena",
+	"appName": "Recoil Arena 3D",
+	"webDir": "www",
+	"backgroundColor": "#0b0820",
+	"server": {
+		"url": "https://recoil-arena.onrender.com",
+		"cleartext": false,
+		"errorPath": "error.html"
+	},
+	"android": {
+		"allowMixedContent": false,
+		"backgroundColor": "#0b0820"
+	}
+}

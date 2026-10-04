@@ -1,0 +1,12 @@
+# Despliegue gratuito en Render (https://render.com): "New +" > "Blueprint" > elige tu repo de GitHub.
+services:
+  - type: web
+    name: recoil-arena
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
